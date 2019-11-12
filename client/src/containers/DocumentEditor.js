@@ -11,13 +11,13 @@ export default function DocumentEditor({ match }) {
 
 
   useEffect(() => {
-    setSocket(io("http://localhost:4000"));
+    setSocket(io("https://cooldox-backend.herokuapp.com/"));
     getDocument();
   }, []);
 
   const getDocument = async () => {
     const resp = await axios.post(
-      `http://localhost:4000/getEditor`,
+      `https://cooldox-backend.herokuapp.com/getEditor`,
       {
         id: match.params.id
       },

@@ -28,7 +28,7 @@ export default function Login() {
   // Handle Login
   const postLogin = async e => {
     e.preventDefault();
-    const response = await fetch("http://localhost:4000/login", {
+    const response = await fetch("https://cooldox-backend.herokuapp.com/login", {
       method: "POST",
       credentials: "include",
       redirect: "follow",

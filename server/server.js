@@ -42,7 +42,11 @@ io.on("connection", socket => {
 });
 
 // staticd
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+// app.use((req, res, next) => {
+//   res.header('Access-Control-Allow-Origin', 'http://cooldox.herokuapp.com');
+//   next();
+// });
+app.use(cors({ credentials: true, origin: "http://cooldox.herokuapp.com" }));
 app.use(express.static(path.join(__dirname, "build")));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -148,6 +152,6 @@ app.use(function(err, req, res, next) {
   });
 });
 
-server.listen(4000, function() {
+server.listen(process.env.PORT || 4000, function() {
   console.log("server is running on port 4000");
 });

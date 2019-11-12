@@ -15,7 +15,7 @@ export default function UserPortal() {
 
   const getDocuments = async () => {
     try {
-      let response = await axios.get("http://localhost:4000/portals", {
+      let response = await axios.get("http://cooldox-backend.herokuapp.com/portals", {
         withCredentials: true
       });
       let content = response.data;
@@ -33,7 +33,7 @@ export default function UserPortal() {
     e.preventDefault();
     try {
       let response = await axios.post(
-        "http://localhost:4000/newDocument",
+        "http://cooldox-backend.herokuapp.com/newDocument",
         {
           title: docname,
           password: newDocPass
@@ -60,7 +60,7 @@ export default function UserPortal() {
     e.preventDefault();
     try {
       let response = await axios.post(
-        "http://localhost:4000/addDocumentById",
+        "http://cooldox-backend.herokuapp.com/addDocumentById",
         {
           id: findDocId,
           password: findDocPass

@@ -41,7 +41,7 @@ export default function Register() {
   };
 
   const postRegister = async () => {
-    const response = await fetch("http://localhost:4000/register", {
+    const response = await fetch("https://cooldox-backend.herokuapp.com/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

@@ -6,7 +6,7 @@ export default function Navbar() {
   const [logoutPress, setLogoutPress] = useState(false);
   // Handle Logout
   const logout = async () => {
-    const response = await fetch("http://localhost:4000/logout", {
+    const response = await fetch("http://cooldox-backend.herokuapp.com/logout", {
       method: "GET"
     });
     const content = await response.json();
