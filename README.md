@@ -2,10 +2,11 @@
 A collaborative, real time text editor using draft.js, websockets, and electron. 
 
 ### Getting Started:
-The app is hosted on Heroku here: [Cooldox](cooldox.herokuapps.com)
+The app is hosted on Heroku [here](cooldox.herokuapps.com)
 
-This should bring you to this page:
+- This should bring you to this page:
+![registerPage](https://user-images.githubusercontent.com/29217753/68633921-80ca9b80-04a8-11ea-8f06-1931a4bfb923.png)
 
-![cooldox2](https://user-images.githubusercontent.com/48307028/63107693-6a697e00-bf53-11e9-80b7-3684a6da5c13.JPG)
-![cooldox3](https://user-images.githubusercontent.com/48307028/63107695-6a697e00-bf53-11e9-809c-1e502d3b51fe.JPG)
-![cooldox1](https://user-images.githubusercontent.com/48307028/63107696-6b021480-bf53-11e9-82ff-cae2aef6c5b6.JPG)
+- Create a new account to get started! After registering successfully, you should be redirected to the login page:
+![loginPage](https://user-images.githubusercontent.com/29217753/68633993-c5563700-04a8-11ea-8fd8-d812d8f3fb62.png)
+
